@@ -12,26 +12,8 @@
 </head>
 <body>
     <header class="w-11/12 mx-auto">
-        <!-- <nav class="sm:block md:flex items-center">
-            <div class="flex items-center mt-10">
-                <div>
-                    <a class="text-white text-xl rounded-md tracking-wider  hover:bg-gray-800" href="" id="home">
-                        <img class=" h-32" src="images/hafijur.svg" alt="">
-                    </a>
-                </div>
-                <div>
-                    <h1 class="text-4xl font-bold">Hafijur Rahman</h1>
-                    <p class="tracking-widest">WEB & UI DESIGNER</p>
-                </div>
-            </div>
-            <div class="ml-auto">
-                <a class="px-8 py-2 text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800" href="#projects">Projects</a>
-                <a class="px-8 py-2 text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800" href="">About</a>
-                <a class="px-8 py-2 text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800" href="">Contact</a>
-            </div>
-        </nav> -->
         <nav class="grid md:grid-cols-2 justify-center items-center bg-success">
-            <div class="flex max-w-sm:justify-center items-center">
+            <div class="flex max-w-sm:sm:justify-center items-center">
                 <div>
                     <a class="text-white text-xl rounded-md tracking-wider hover:bg-gray-800" href="" id="home">
                         <img class=" h-32" src="images/hafijur.svg" alt="">
@@ -42,10 +24,10 @@
                     <p class="tracking-widest font-semibold">WEB & UI DESIGNER</p>
                 </div>
             </div>
-            <div class="md:ml-auto mt-8 md:m-0flex-col">
-                <a class="px-8 py-2 text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800" href="#projects">Projects</a>
-                <a class="px-8 py-2 text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800" href="">About</a>
-                <a class="px-8 py-2 text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800" href="">Contact</a>
+            <div class="md:ml-auto mt-8 block sm:flex">
+                <a class="px-8 py-2 my-4 sm:my-0 block text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800 sm:mr-4" href="#projects">Projects</a>
+                <a class="px-8 py-2 my-4 sm:my-0 block text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800 sm:mr-4" href="#about">About</a>
+                <a class="px-8 py-2 my-4 sm:my-0 block text-white text-xl rounded-md tracking-wider bg-gray-700 hover:bg-gray-800 sm:mr-4" href="#contact">Contact</a>
             </div>
         </nav>
         <section class="grid lg:grid-cols-2">
@@ -59,17 +41,22 @@
                 </p>
                 <p><a class="text-gray-800 font-extrabold text-xl" href="">View Projects</a> <span class="text-gray-400 font-bold">or</span> <a class="text-gray-800 font-extrabold text-xl" href="">Read About Me</a></p>
             </div>
-            <div class="lg:ml-16">
-                <img src="images/profile.png" alt="">
+            <div class=" flex justify-center">
+                <img class="w-3/5" src="images/profile.png" alt="">
             </div>
         </section>
     </header>
 
     <main>
         <!-- About me -->
-        <section class="w-11/12 my-16 mx-auto">
-            <h1 class="text-7xl text-center my-12 text-gray-800 font-black">About me</h1>
-            <div class="grid grid-cols-1 justify-items-center">
+        <section class="w-11/12 my-16 mx-auto" id="about">
+            <h1 class="text-6xl text-center my-12 text-gray-800 font-black">About me</h1>
+            <a href="#footer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                  </svg>
+            </a>
+            <div class="grid grid-cols-1 justify-items-center my-8">
                 <div class="text-center break-words sm:text-center mb-10">
                     <p class="text-3xl sm:text-6xl font-semibold leading-light text-gray-800">
                         I’m Hafijur Rahman, a multidisciplinary designer who focuses on telling my clients’ stories visually, through enjoyable and meaningful experiences. I specialize in responsive websites and functional user interfaces.
@@ -85,14 +72,10 @@
         </section>
         <!-- Projects -->
         <section class="w-11/12 my-16 mx-auto">
-            <a href="#projects">
-                <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
-                  </svg>
-            </a>
+            <h1 class="text-7xl text-center my-12 text-gray-800 font-black">Case studies</h1>
         </section>
         <section class="w-11/12 mt-10 mx-auto" id="projects">
-            <div class="grid gap-4 lg:grid-cols-2">
+            <div class="grid gap-x-4 lg:grid-cols-2">
                 <div class="">
                     <img class="w-full h-4/5" src="images/project-1.jpg" alt="">
                 </div>
@@ -113,8 +96,44 @@
                 </div>
             </div>
         </section>
-        <!-- Client -->
-        <section class="w-11/12 mt-10 mx-auto">
+
+        <!-- gallery -->
+        <section class="w-11/12 mt-10 mx-auto text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap">
+              <div class="flex w-full mb-20 flex-wrap">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Hafijur On Instagram</h1>
+                <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, veniam dolor suscipit sint voluptate laborum odit fuga reprehenderit nemo aliquam.</p>
+              </div>
+              <div class="flex flex-wrap md:-m-2 -m-1">
+                
+                <div class="flex flex-wrap w-1/2">
+                  <div class="md:p-2 p-1 w-full">
+                    <img alt="gallery" class="w-full h-full object-cover object-center block" src="images/about-1.png">
+                  </div>
+                  <div class="md:p-2 p-1 w-1/2">
+                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/modal-2.png">
+                  </div>
+                  <div class="md:p-2 p-1 w-1/2">
+                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/modal-3.png">
+                  </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                  <div class="md:p-2 p-1 w-1/2">
+                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/modal-4.png">
+                  </div>
+                  <div class="md:p-2 p-1 w-1/2">
+                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/about-2.png">
+                  </div>
+                  <div class="md:p-2 p-1 w-full">
+                    <img alt="gallery" class="w-full h-full object-cover object-center block" src="images/modal-1.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Client -->
+        <section class="w-11/12 mt-10 mx-auto bg-blend-color-burn">
             <h1 class="text-7xl font-black">Clients</h1>
             <div class="flex sm:flex flex-wrap sm:flex-wrap justify-center sm:justify-center py-10 my-10 rounded-xl">
                 <img src="clients/logo-1.png" alt="">
@@ -126,43 +145,9 @@
             </div>
         </section>
 
-        <!-- gallert -->
-        <section class="w-11/12 mt-10 mx-auto text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto flex flex-wrap">
-              <div class="flex w-full mb-20 flex-wrap">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Hafijur On Instagram</h1>
-                <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
-              </div>
-              <div class="flex flex-wrap md:-m-2 -m-1">
-                <div class="flex flex-wrap w-1/2">
-                  <div class="md:p-2 p-1 w-1/2">
-                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/about-1.png">
-                  </div>
-                  <div class="md:p-2 p-1 w-1/2">
-                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/about-2.png">
-                  </div>
-                  <div class="md:p-2 p-1 w-full">
-                    <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360">
-                  </div>
-                </div>
-                <div class="flex flex-wrap w-1/2">
-                  <div class="md:p-2 p-1 w-full">
-                    <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361">
-                  </div>
-                  <div class="md:p-2 p-1 w-1/2">
-                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302">
-                  </div>
-                  <div class="md:p-2 p-1 w-1/2">
-                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-        <!-- Fun Section -->
-        <section class="w-11/12 mt-10 mx-auto">
-            <div class="relative flex items-top justify-center min-h-screen bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
+        <!-- Contact Section -->
+        <section class="w-11/12 mx-auto" id="contact">
+            <div class="relative flex items-top justify-center bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
                 <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                     <div class="mt-8 overflow-hidden">
                         <div class="grid grid-cols-1 md:grid-cols-2">
@@ -229,9 +214,39 @@
             </div>
         </section>
 
+         <!-- Adventure and Shop -->
+      <section class="w-11/12 my-20 mx-auto">
+        <h1 class="text-center text-5xl my-16">Adventure</h1>
+        <div
+        class="
+          road-adventure
+          my-5
+          flex
+          justify-center
+          items-center
+        "
+      >
+        <div class="text-center lh-lg lh-lg">
+          <h1 class="text-white my-3 text-5xl">AFFORDABLE ALL-ROAD ADVENTURER</h1>
+          <h3 class="text-3xl text-white my-8">
+            A fun, confidence-inspiring ride, everytime
+          </h3>
+          <button class="mt-3px-12 py-8 btn-shop">SHOP NOW</button>
+        </div>
+      </div>
+      </section>
+
+      <!-- Fun -->
+      <section class="w-11/12 my-20 mx-auto">
+        <div class="text-center">
+            <h2 class="text-6xl text-gray-500 mb-24">Do you want to get married? No worries ! We got your back. Click here for surprise</h2>
+            <a class="btn-marry" href="https://ordhekdeen.com/" target="_blank">Marry Me &#10084;</a>
+        </div>
+    </section>
+
     </main>
 
-    <footer class="w-11/12 mx-auto py-24">
+    <footer class="w-11/12 mx-auto py-24" id="footer">
         <div class="">
             <img class="mx-auto rounded-full h-80 w-80 flex items-center justify-center" src="images/Hafijur.gif" alt="">
         </div>

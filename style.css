@@ -7,3 +7,35 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.btn-marry{
+    padding: 25px 60px;
+    border: 3px solid #373737;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.btn-marry:hover{
+    background-color: #282828;
+    color: aliceblue;
+    transition: 0.2s;
+}
+.btn-shop{
+    padding: 25px 60px;
+    background-color: aliceblue;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.btn-shop:hover{
+    /* background-color: #fff; */
+    color: #282828;
+    transition: 0.2s;
+}
+.road-adventure{
+    width: 77%;
+    margin: 0 auto;
+    height: 500px;
+    background-image: url(../images/road-5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
